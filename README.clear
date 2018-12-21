@@ -1,0 +1,12 @@
+To update:
+- Generate new firecracker-vendor for the firecracker version being built
+ - install https://github.com/alexcrichton/cargo-vendor/
+ - extract firecracker tar and run cargo vendor
+ - clone the cgit/projects/firecracker-vendor/ tree
+ - cp -a the .git from firecracker-vendor into the newly created vendor folder
+ - commit, tag and push (push tag too) the changes for firecracker-vendor
+- update spec and Makefile with new versions and download the firecracker-vendor archive from cgit
+- make build to verify everything is building fix as needed
+- make generateupstream
+- commit changes for firecracker
+- make koji
