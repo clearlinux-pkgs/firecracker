@@ -1,6 +1,6 @@
 Name:           firecracker
 Version:        0.12.0
-Release:        2
+Release:        3
 Summary:        Virtualization software for running multi-tenant containers
 License:        Apache-2.0
 URL:            https://github.com/firecracker-microvm/firecracker
@@ -8,7 +8,6 @@ Source0:        https://github.com/firecracker-microvm/firecracker/archive/v0.12
 Source1:        http://localhost/cgit/projects/firecracker-vendor/snapshot/firecracker-vendor-v0.12.0.tar.gz
 
 BuildRequires:  musl
-BuildRequires:  cargo
 BuildRequires:  rustc
 
 %description
