@@ -1,6 +1,6 @@
 Name:           firecracker
 Version:        0.12.0
-Release:        3
+Release:        4
 Summary:        Virtualization software for running multi-tenant containers
 License:        Apache-2.0
 URL:            https://github.com/firecracker-microvm/firecracker
@@ -43,7 +43,7 @@ export RUSTFLAGS="-C opt-level=3 -g -Clink-args=-Wl,-z,relro,-z,now"
 cargo install --root %{buildroot}/usr --path . --features vsock
 
 # Remove installer artifacts
-rm %{buildroot}/usr/.crates.toml
+rm %{buildroot}/usr/.crates*
 
 %files
 /usr/bin/firecracker
